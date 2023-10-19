@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    background: black;
+    height: 2000px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn{
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu nav h1{
+    color: white;
+    font-weight: 700;
+    line-height: 20px; 
+    margin-top: 30px;
+    font-size: 30px;
+    padding: 0 30px;
+    position: absolute;
+}
+
+.menu nav{
+    background: #121212;
+    height: 90px;
+}
+
+.search{
+    background: white;
+    height: 50px;
+    width: 600px;
+    text-align: center;
+    border-radius: 40px;
+    justify-content: center;
+    position: relative;
+    left: 28%;
+    top: 20px;
+}
+
+.search-bar{
+    text-align: center;
+}
+
+.search-bar input{
+  padding: 5px 7px;
+  width: 500px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background: transparent;
+  font-size: 18px;
+  color: black;
+}
+
+.search-bar button{
+    padding: 4px 7px;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+    outline: none;
+    border-radius: 20px;
+    background: transparent;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+.Title{
+    position: relative;
+    left: 1%;
+    font-size: 50px;
+    top: 150px;
+    left: 12%;
+    font-family: aboreto;
+}
+
+
+.movie{
+    color: white;
+    position: relative;
+    top: 120px;
+}
+
+.movie-filter{
+    margin: 40px;
+    position: relative;
+    left: 10%;
+    border-radius: 20px;
+    padding: 12px;
+    height: 250px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+
+
+#bunnyGirl{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/sister.jpg_large");
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+}
+
+.movie-filter img{
+    height: 220px;
+    padding: 12px;
+}
+
+#Oppenheimer{
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url("images/oppenheimer2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    width: 70%;
+}
+
+#Expendables{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("images/expendables\ 4.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+}
+
+.movie-filter h2{
+    font-size: 40px;
+    position: relative;
+    left: 20%;
+    bottom: 200px;
+}
+
+.movie-filter button{
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+    position: relative;
+    left: 90%;
+    bottom: 200px;
+    outline-color: white;
+    border-color: white;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    background: transparent;
+    transition: 0.75s;
+}
+
+.movie-filter button:hover{
+    box-shadow: inset -10.5em 0 0 white;
+    color: black;
+}
+
+.movie-filter h3{
+    position: relative;
+    bottom: 160px;
+    left: 20%;
+    font-size: 20px;
+}
+
+.movie-filter h4{
+    position: relative;
+    left: 20%;
+    bottom: 150px;
+    background-color: #121212;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.movie-filter:hover{
+    transform: scale(1.05);
+}
+
+#batman{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/tdk.jpg");
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+}
+
+#theCreator{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/tc.jpg");
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+}
+
+#theFlash{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/tf.jpeg");
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
