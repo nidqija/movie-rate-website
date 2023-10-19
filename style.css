@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: poppins ;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+body{
+  height: 3800px;
+  background-color: black;
+}
+
+
+
+@keyframes transitionIn{
+  from{
+     opacity: 0; 
+     transform: translateY(-10px);
+  }
+
+  to{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  animation: transitionIn 0.75s;
+}
+
+.background {  
+   font-size: 35px;
+   position: absolute;
+   left: 80px;
+   top: 200px;
+   color: white;
+}
+
+.blue-beetle{
+  background: url('images/blue-beetle.jpeg');
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+.background h1 {
+  font-family: aboreto;
+}
+
+.background h3{
+    font-family: poppins;
+    font-size: 25px;
+    font-weight: 400;
+    
+}
+
+.background p{
+    font-size: 15px;
+}
+
+.background button{
+    font-weight: 700;
+   padding: 12px 20px;
+   background-color: #121212;
+   color: white;
+   border-color: white;
+   border-radius: 20px;
+   font-family: poppins;
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+
+
+
+
+ .menu nav h1{
+    color: white;
+    font-weight: 700;
+    line-height: 20px; 
+    margin-top: 30px;
+    font-size: 30px;
+    padding: 0 30px;
+    position: absolute;
+}
+
+.menu nav li img{
+  height: 20px;
+}
+
+
+
+.menu nav{
+  position: absolute;
+  float: right;
+  background-color: #121212;
+  width: 100%;
+   
+}
+
+
+
+.menu ul{
+  list-style-type: none;
+  background: transparent;
+  margin: 12px 10px;
+  padding: 0%;
+  overflow: hidden;
+  
+
+}
+
+.menu li{
+   float: right;
+   
+}
+
+
+
+.menu li a{
+  display: block;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: 15px;
+}
+
+.menu li a:hover{
+  color: black;
+  box-shadow: inset -10.5em 0 0 white;
+  border-radius: 10px;
+}
+
+.menu nav ul li .home{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+
+.content{
+  background: black;
+  width: 100%;
+  position: absolute;
+  height: 1600px;
+  top: 600px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 0 auto;
+  box-shadow: 0px 0px 50px 50px;
+}
+
+.content img{
+  border-radius: 20px;
+  display: block;
+  height: 350px;
+  position: relative;
+  top: 250px;
+  left: 50px;
+}
+
+.content h1{
+  color: white; 
+  font-family: aboreto;
+  text-align: center;
+  font-size: 50px;
+}
+
+.content p{
+  font-size: 15px;
+  text-align: center;
+  
+}
+
+
+
+.background button:hover{
+    box-shadow: inset -10.5em  0 0 white;
+    color: black;
+}
+
+.content h1{
+  position: absolute;
+  margin-top: 8%;
+  left: 34%;
+}
+
+.content p{
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  left: 38%;
+  top: 11%;
+}
+
+.content header{
+  padding: 40px 0;
+  text-align: center;
+}
+
+.content header nav ul{
+  margin-top: 200px;
+  list-style: none;
+}
+
+
+.content nav ul li {
+  display: inline;
+  margin-right: 10px;
+  
+  
+}
+
+.content nav ul li a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  background-color: #121212;
+  padding: 16px 20px;
+  border-radius: 10px;
+  border: white;
+  
+  transition: 0.7s;
+}
+
+.content nav ul li a:hover{
+  background-color: white;
+  color: black;
+  border-color: black;
+  box-shadow: inset -10.5em 0 0 white;
+  font-weight: 700;
+}
+
+.menuBtns{
+  display: inline;
+}
+
+main{
+  position: relative;
+  top: 230px;
+
+}
+
+.menuBtns li{
+  display: inline;
+  padding: 20px 30px;
+  justify-content: center;
+  position: relative;
+  left: 32%;
+  top: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.menuBtns li:hover{
+  box-shadow: inset -12.5em 0 0 #121212;
+  color: black;
+}
+
+
+
+.menuBtns li a{
+  text-decoration: none;
+  color: white;
+  
+}
+
+.movie-list{
+  padding: 20px 10px;
+}
+
+.movie-list ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-list ul li{
+  list-style: none;
+  padding: 20px ;
+  align-items: center;
+  width: 24%;
+  height: 500px;
+  margin: 55px;
+  background: #121212;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  top: 230px;
+  color: white;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.movie-list ul li:hover{
+  transform: scale(1.05);
+  
+}
+
+.movie-list ul li img{
+   width: 100%;
+   height: 400px;
+   position: relative;
+   top: -10px;
+   left: 0%;
+
+}
+
+.movie-list ul li  button{
+  background: darkgray;
+  padding: 5px 10px;
+  position: relative;
+  left: 85%;
+  top: -50px;
+  border-radius: 50%;
+  outline-color: white;
+  border-color: white;
+  color: white;
+  font-size: 20px;
+  height: 40px;
+  width: 40px ;
+  background-color: transparent;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.movie-list button:hover{
+  background-color: white;
+  color: black;
+  
+}
+
+.movie-list h2{
+  font-weight: 700;
+
+}
+
+.movie-list h3{
+  font-weight: 300;
+}
+
+.bunny-girl-senpai{
+  font-size: 15px;
+
+}
+
+.fnaf{
+  font-size: 15px;
+}
+
+.insidious{
+  font-size: 15px;
+}
+
+.register{
+  height: 800px;
+  width: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/movie-wallpaper.jpg");
+  position: absolute;
+  background-blend-mode: darken;
+  top: 3500px;
+}
+
+.form-box{
+  height: 500px;
+  width: 490px;
+  background: #121212;
+  text-align: center;
+  position: relative;
+  top: 80px;
+  left: 32%;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 20px 0 100px 20px;
+}
+
+.form-box p{
+  color: white;
+  padding: 12px 16px;
+  font-family: aboreto;
+}
+
+.form-box h1{
+  color: white;
+  font-family: aboreto;
+}
+
+.form-box h1::after{
+  transform: translateX(10%);
+  content: '';
+  background: #121212;
+  height: 2px;
+}
+
+.form-box .input-field{
+   margin: 12px 13px;
+   
+}
+
+.form-box i{
+   padding: 7px;
+   margin: 10px 0;
+   color: white;
+   
+}
+
+.input-field{
+  transition: 0.7s;
+  padding: 3px 4px;
+  position: relative;
+  top: 10px;
+}
+
+.input-field input{
+  font-size: 15px;
+  padding: 12px 13px;
+}
+
+.submit button{
+  padding: 15px 25px;
+  margin-right: 15px;
+  border-radius: 10px;
+  position: relative;
+  left: 5%;
+  font-size: 15px;
+  border-radius: 25px;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.submit .signup{
+  background: #121212;
+  color: white;
+  border-color: white;
+}
+
+.submit .signup::after{
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+#nameField{
+  transition: max-height 0.7s ease-in-out;
+  overflow: hidden;
+  max-height: '60px';
+}
+
+.line{
+height: 2px;
+width: 130px;
+background: white;
+position: relative;
+left: 34%;
+top: 1%;
+border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
